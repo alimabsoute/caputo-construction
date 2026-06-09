@@ -92,35 +92,38 @@ if (breakdownSection) chartObserver.observe(breakdownSection);
 // ─── TESTIMONIALS ─────────────────────────────────
 const slider = document.getElementById('slider');
 const dots   = document.querySelectorAll('.dot');
-let current  = 0;
-let autoplay;
+if (slider) {
+  let current  = 0;
+  let autoplay;
 
-const goTo = (i) => {
-  current = i;
-  slider.style.transform = `translateX(-${i * 100}%)`;
-  dots.forEach((d, idx) => d.classList.toggle('active', idx === i));
-};
+  const goTo = (i) => {
+    current = i;
+    slider.style.transform = `translateX(-${i * 100}%)`;
+    dots.forEach((d, idx) => d.classList.toggle('active', idx === i));
+  };
 
-dots.forEach(dot => {
-  dot.addEventListener('click', () => { goTo(+dot.dataset.i); resetAutoplay(); });
-});
+  const resetAutoplay = () => {
+    clearInterval(autoplay);
+    autoplay = setInterval(() => goTo((current + 1) % 3), 5000);
+  };
 
-const resetAutoplay = () => {
-  clearInterval(autoplay);
-  autoplay = setInterval(() => goTo((current + 1) % 3), 5000);
-};
-resetAutoplay();
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => { goTo(+dot.dataset.i); resetAutoplay(); });
+  });
 
-// Touch swipe
-let touchStartX = 0;
-slider.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
-slider.addEventListener('touchend', e => {
-  const diff = touchStartX - e.changedTouches[0].clientX;
-  if (Math.abs(diff) > 50) {
-    goTo(diff > 0 ? Math.min(current + 1, 2) : Math.max(current - 1, 0));
-    resetAutoplay();
-  }
-});
+  resetAutoplay();
+
+  // Touch swipe
+  let touchStartX = 0;
+  slider.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  slider.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+      goTo(diff > 0 ? Math.min(current + 1, 2) : Math.max(current - 1, 0));
+      resetAutoplay();
+    }
+  });
+}
 
 // ─── PROJECT DATA ─────────────────────────────────
 const projects = [
