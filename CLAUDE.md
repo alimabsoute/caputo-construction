@@ -1,5 +1,8 @@
 # Caputo Construction Company (construction-site)
 
+<!-- push-tier: 2 -->
+<!-- 1 = deploy-wired: NEVER push (CLI deploy only). 2 = public: push only after secret scan. 3 = private non-deploy: auto-commit + auto-push OK -->
+
 ## Purpose
 Marketing site for Caputo Construction Company, Hazleton PA (wife's family business)
 
