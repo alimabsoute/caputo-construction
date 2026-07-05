@@ -1,0 +1,5 @@
+redesign/
+tools/
+logs/
+*.md
+.gitignore

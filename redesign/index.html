@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Caputo Redesign Gallery — 3 Directions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,300&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#131210; --card:#1C1A17; --line:rgba(240,236,228,.14); --txt:#F0ECE4; --mut:#8F887C; --red:#D42B2B; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Instrument Sans',sans-serif; background:var(--bg); color:var(--txt); min-height:100vh; padding:clamp(24px,4vw,64px); }
+  header { max-width:1200px; margin:0 auto clamp(36px,5vw,64px); }
+  .kick { color:var(--red); font-size:12px; letter-spacing:.24em; text-transform:uppercase; margin-bottom:16px; }
+  h1 { font-family:'Fraunces',serif; font-weight:300; font-size:clamp(38px,6vw,72px); line-height:1.02; letter-spacing:-.015em; }
+  h1 em { font-style:italic; }
+  .sub { color:var(--mut); max-width:640px; margin-top:18px; font-size:15.5px; line-height:1.7; }
+  .sub strong { color:var(--txt); font-weight:600; }
+  .grid { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  @media (max-width:960px){ .grid { grid-template-columns:1fr; } }
+  .card { display:block; text-decoration:none; color:inherit; background:var(--card); border:1px solid var(--line); border-radius:10px; overflow:hidden; transition:transform .35s cubic-bezier(.22,1,.36,1), border-color .3s, box-shadow .35s; }
+  .card:hover { transform:translateY(-6px); border-color:rgba(240,236,228,.4); box-shadow:0 30px 60px rgba(0,0,0,.45); }
+  .thumb { aspect-ratio:16/10; background:#26231E; position:relative; overflow:hidden; }
+  .thumb img { width:100%; height:100%; object-fit:cover; object-position:top; transition:transform .6s cubic-bezier(.22,1,.36,1); }
+  .card:hover .thumb img { transform:scale(1.04); }
+  .thumb .pend { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:var(--mut); font-size:12px; letter-spacing:.18em; text-transform:uppercase; }
+  .body { padding:24px 24px 28px; }
+  .no { font-size:11px; letter-spacing:.22em; color:var(--red); }
+  .body h2 { font-family:'Fraunces',serif; font-weight:500; font-size:26px; margin:10px 0 8px; }
+  .body p { color:var(--mut); font-size:14px; line-height:1.65; }
+  .open { display:inline-block; margin-top:18px; font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--txt); border-bottom:1px solid var(--red); padding-bottom:3px; }
+  footer { max-width:1200px; margin:clamp(40px,6vw,72px) auto 0; padding-top:24px; border-top:1px solid var(--line); color:var(--mut); font-size:12px; line-height:1.9; }
+  footer code { color:var(--txt); background:rgba(240,236,228,.08); padding:2px 8px; border-radius:4px; font-size:11.5px; }
+</style>
+</head>
+<body>
+<header>
+  <p class="kick">Caputo Construction · Redesign Gallery</p>
+  <h1>Three directions.<br><em>One family business.</em></h1>
+  <p class="sub">Every version keeps the hero background video and corrects the record: <strong>Est. 1977</strong> · <strong>607-768-7501</strong> · <strong>Serving Southeastern Pennsylvania</strong> · phone-only contact · locally-hosted PA imagery · a distinct inquiry form per direction.</p>
+</header>
+
+<div class="grid">
+  <a class="card" href="/redesign/v1-blueprint/">
+    <div class="thumb"><img src="/redesign/thumbs/v1.jpg" alt="" onerror="this.remove()"><span class="pend">Preview pending</span></div>
+    <div class="body">
+      <span class="no">DIRECTION 01</span>
+      <h2>Blueprint</h2>
+      <p>The drafting table comes to life — grid paper, dimension lines, and a house cross-section that draws itself as you scroll. The inquiry form is a project spec sheet that gets rubber-stamped &ldquo;RECEIVED.&rdquo;</p>
+      <span class="open">Open direction &rarr;</span>
+    </div>
+  </a>
+  <a class="card" href="/redesign/v2-monolith/">
+    <div class="thumb"><img src="/redesign/thumbs/v2.jpg" alt="" onerror="this.remove()"><span class="pend">Preview pending</span></div>
+    <div class="body">
+      <span class="no">DIRECTION 02</span>
+      <h2>Editorial Monolith</h2>
+      <p>Apple/Stripe luxe — enormous serif type, a pinned &ldquo;1977 &rarr; 2026&rdquo; scroll sequence, parallax project spreads, and a three-step inquiry that ends in a full-screen &ldquo;Thank you.&rdquo;</p>
+      <span class="open">Open direction &rarr;</span>
+    </div>
+  </a>
+  <a class="card" href="/redesign/v3-workshop/">
+    <div class="thumb"><img src="/redesign/thumbs/v3.jpg" alt="" onerror="this.remove()"><span class="pend">Preview pending</span></div>
+    <div class="body">
+      <span class="no">DIRECTION 03</span>
+      <h2>Kinetic Workshop</h2>
+      <p>Timber, steel, and momentum — marquee strips, magnetic buttons, tilting job cards, and a split-panel form that files your request as a stamped work order.</p>
+      <span class="open">Open direction &rarr;</span>
+    </div>
+  </a>
+</div>
+
+<footer>
+  Serve locally: <code>node redesign/serve.cjs 4174</code> &nbsp;→&nbsp; <code>http://localhost:4174/redesign/</code><br>
+  Image candidates for veto: <code>/redesign/assets/_candidates/review.html</code> · Credits: <code>/redesign/assets/ATTRIBUTION.md</code>
+</footer>
+</body>
+</html>

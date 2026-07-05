@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Caputo Construction — V1 Blueprint</title>
+<meta name="description" content="Full-service residential and commercial construction serving Southeastern Pennsylvania since 1977.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="blueprint.css">
+</head>
+<body>
+
+<!-- edge rulers -->
+<div class="ruler ruler--left" aria-hidden="true"></div>
+<div class="ruler ruler--top" aria-hidden="true"></div>
+
+<!-- ═══ NAV / TITLE BAR ═══ -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#" class="nav__logo">
+      <img src="/caputo-logo-white.png" class="logo-dark" alt="Caputo Construction" height="30">
+      <img src="/caputo-logo-black.png" class="logo-light" alt="Caputo Construction" height="30">
+    </a>
+    <div class="nav__meta mono">DWG NO. 1977-SEPA&nbsp;&nbsp;·&nbsp;&nbsp;REV A</div>
+    <ul class="nav__links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#section-dwg">The Build</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#spec">Get a Quote</a></li>
+    </ul>
+    <a href="tel:+16077687501" class="nav__phone mono">607-768-7501</a>
+    <button class="nav__burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu__close" id="mobileClose" aria-label="Close menu">&#10005;</button>
+  <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#section-dwg">The Build</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#spec">Get a Quote</a></li>
+  </ul>
+  <a href="tel:+16077687501" class="mono">607-768-7501</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<header class="hero" id="hero">
+  <video class="hero__video" autoplay muted loop playsinline poster="/redesign/assets/img/build-crane.jpg" id="heroVideo">
+    <source src="/hero-v5-compat.mp4" type="video/mp4">
+  </video>
+  <div class="hero__tint"></div>
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__content">
+    <p class="hero__eyebrow mono">SERVING SOUTHEASTERN PENNSYLVANIA · EST. 1977</p>
+    <h1 class="hero__h1">
+      <span class="hero__line"><span class="dim dim--l" aria-hidden="true"></span>BUILT TO LAST.</span>
+      <span class="hero__line hero__line--red">BUILT FOR YOU.<span class="dim dim--r" aria-hidden="true"></span></span>
+    </h1>
+    <p class="hero__sub">Forty-nine years of residential and commercial construction — drawn, measured, and delivered with uncommon care.</p>
+    <div class="hero__btns">
+      <a href="#spec" class="btn btn--red">Open a Spec Sheet</a>
+      <a href="#projects" class="btn btn--ghost">View the Work &rarr;</a>
+    </div>
+  </div>
+  <div class="hero__titleblock mono" aria-hidden="true">
+    <span>CAPUTO CONSTRUCTION CO.</span><span>SCALE: NTS</span><span>SHT 1 OF 1</span>
+  </div>
+</header>
+
+<!-- ═══ STATS / SCHEDULE TABLE ═══ -->
+<section class="sched" id="stats">
+  <div class="container">
+    <p class="sched__caption mono reveal">TABLE 01 — GENERAL SCHEDULE OF RECORD</p>
+    <div class="sched__table">
+      <div class="sched__cell reveal"><span class="sched__num mono" data-count="49">0</span><span class="sched__label">Years in business</span><span class="sched__ref mono">SINCE 1977</span></div>
+      <div class="sched__cell reveal"><span class="sched__num mono" data-count="500" data-suffix="+">0</span><span class="sched__label">Projects completed</span><span class="sched__ref mono">ALL CATEGORIES</span></div>
+      <div class="sched__cell reveal"><span class="sched__num mono" data-prefix="$" data-count="200" data-suffix="M+">$0</span><span class="sched__label">Value delivered</span><span class="sched__ref mono">CUMULATIVE</span></div>
+      <div class="sched__cell reveal"><span class="sched__num mono" data-count="100" data-suffix="%">0</span><span class="sched__label">Licensed &amp; insured</span><span class="sched__ref mono">PA GC LICENSE</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow mono">SHEET INDEX — SERVICES</p>
+      <h2>Full-service construction,<br><em>start to finish.</em></h2>
+    </div>
+    <div class="svc__grid">
+      <article class="svc reveal">
+        <header class="svc__top mono"><span>SHT 01/06</span><span class="svc__tick"></span></header>
+        <svg class="svc__icon draw" viewBox="0 0 96 72" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="10" y="28" width="76" height="38"/><path d="M10 28 L48 6 L86 28"/><rect x="40" y="46" width="16" height="20"/><rect x="18" y="36" width="12" height="10"/><rect x="66" y="36" width="12" height="10"/><line x1="4" y1="66" x2="92" y2="66"/>
+        </svg>
+        <h3>Commercial Construction</h3>
+        <p>Office buildings, retail centers, medical facilities, and industrial complexes built to spec — on time, on budget.</p>
+      </article>
+      <article class="svc reveal">
+        <header class="svc__top mono"><span>SHT 02/06</span><span class="svc__tick"></span></header>
+        <svg class="svc__icon draw" viewBox="0 0 96 72" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 34 L48 8 L82 34"/><rect x="20" y="34" width="56" height="32"/><rect x="42" y="46" width="12" height="20"/><rect x="27" y="40" width="9" height="9"/><rect x="60" y="40" width="9" height="9"/><path d="M62 16 v-8 h8 v14"/>
+        </svg>
+        <h3>Residential Construction</h3>
+        <p>Custom homes, additions, and complete renovations crafted with uncompromising precision and care.</p>
+      </article>
+      <article class="svc reveal">
+        <header class="svc__top mono"><span>SHT 03/06</span><span class="svc__tick"></span></header>
+        <svg class="svc__icon draw" viewBox="0 0 96 72" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="26" y="6" width="44" height="60" rx="2"/><path d="M36 6 v-2 a4 4 0 018 0 v2 M52 6 v-2 a4 4 0 018 0 v2"/><line x1="34" y1="24" x2="62" y2="24"/><line x1="34" y1="34" x2="62" y2="34"/><line x1="34" y1="44" x2="50" y2="44"/><path d="M34 54 l6 6 12-12"/>
+        </svg>
+        <h3>General Contracting</h3>
+        <p>End-to-end project management, subcontractor coordination, permitting, and design-build delivery.</p>
+      </article>
+      <article class="svc reveal">
+        <header class="svc__top mono"><span>SHT 04/06</span><span class="svc__tick"></span></header>
+        <svg class="svc__icon draw" viewBox="0 0 96 72" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 66 h84"/><path d="M14 66 V46 l14-12 v32"/><path d="M40 66 V30 h22 l14 10 v26"/><circle cx="24" cy="58" r="3"/><circle cx="70" cy="58" r="3"/><path d="M52 30 v-10 l16-8"/>
+        </svg>
+        <h3>Site Development</h3>
+        <p>Grading, excavation, utility installation, and foundations — everything before the first wall goes up.</p>
+      </article>
+      <article class="svc reveal">
+        <header class="svc__top mono"><span>SHT 05/06</span><span class="svc__tick"></span></header>
+        <svg class="svc__icon draw" viewBox="0 0 96 72" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 62 l12-12 8 8 30-30"/><path d="M56 20 l16-8 8 16-16 8z"/><path d="M10 66 l8-8 8 8-8 6z"/><line x1="60" y1="24" x2="74" y2="38"/>
+        </svg>
+        <h3>Renovation &amp; Remodeling</h3>
+        <p>Full gut renovations, structural changes, and historic preservation that breathes new life into existing spaces.</p>
+      </article>
+      <article class="svc reveal">
+        <header class="svc__top mono"><span>SHT 06/06</span><span class="svc__tick"></span></header>
+        <svg class="svc__icon draw" viewBox="0 0 96 72" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="12" y="10" width="72" height="52" rx="2"/><line x1="12" y1="24" x2="84" y2="24"/><line x1="36" y1="10" x2="36" y2="24"/><line x1="60" y1="10" x2="60" y2="24"/><path d="M24 42 l10 10 22-22"/><line x1="24" y1="54" x2="72" y2="54"/>
+        </svg>
+        <h3>Project Management</h3>
+        <p>Expert budgeting, scheduling, inspection coordination, and reporting from groundbreaking to ribbon-cutting.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SECTION DRAWING — THE SHOWPIECE ═══ -->
+<section class="dwg" id="section-dwg">
+  <div class="container">
+    <div class="sec-head sec-head--onblue reveal">
+      <p class="eyebrow mono">DETAIL A — TYPICAL BUILD, SECTION VIEW</p>
+      <h2>Every layer, <em>drawn before it's built.</em></h2>
+      <p class="sec-sub">A Caputo project is documented from footing to ridge. Scroll — the section draws itself the way a job actually goes together.</p>
+    </div>
+    <div class="dwg__stage">
+      <svg class="dwg__svg" viewBox="0 0 900 560" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-label="Architectural cross-section of a house, drawn in stages">
+        <!-- ground -->
+        <g class="ply" data-ply="1">
+          <line x1="30" y1="470" x2="870" y2="470" class="s-main"/>
+          <path d="M60 470 l-14 14 M110 470 l-14 14 M160 470 l-14 14 M210 470 l-14 14 M260 470 l-14 14 M700 470 l-14 14 M750 470 l-14 14 M800 470 l-14 14 M850 470 l-14 14" class="s-thin"/>
+        </g>
+        <!-- foundation -->
+        <g class="ply" data-ply="2">
+          <rect x="250" y="430" width="30" height="60" class="s-main"/>
+          <rect x="620" y="430" width="30" height="60" class="s-main"/>
+          <rect x="235" y="490" width="60" height="22" class="s-main"/>
+          <rect x="605" y="490" width="60" height="22" class="s-main"/>
+          <line x1="280" y1="452" x2="620" y2="452" class="s-main"/>
+          <path d="M285 460 h330" class="s-thin s-dash"/>
+        </g>
+        <!-- floor deck + walls -->
+        <g class="ply" data-ply="3">
+          <line x1="250" y1="430" x2="650" y2="430" class="s-main"/>
+          <line x1="250" y1="418" x2="650" y2="418" class="s-main"/>
+          <path d="M262 418 v12 M286 418 v12 M310 418 v12 M334 418 v12 M358 418 v12 M382 418 v12 M406 418 v12 M430 418 v12 M454 418 v12 M478 418 v12 M502 418 v12 M526 418 v12 M550 418 v12 M574 418 v12 M598 418 v12 M622 418 v12" class="s-thin"/>
+          <rect x="250" y="270" width="14" height="148" class="s-main"/>
+          <rect x="636" y="270" width="14" height="148" class="s-main"/>
+          <rect x="440" y="318" width="60" height="100" class="s-thin"/>
+          <line x1="470" y1="318" x2="470" y2="418" class="s-thin"/>
+          <rect x="300" y="310" width="70" height="56" class="s-thin"/>
+          <line x1="335" y1="310" x2="335" y2="366" class="s-thin"/>
+          <line x1="300" y1="338" x2="370" y2="338" class="s-thin"/>
+        </g>
+        <!-- roof -->
+        <g class="ply" data-ply="4">
+          <path d="M230 280 L450 130 L670 280" class="s-main"/>
+          <path d="M258 280 L450 149 L642 280" class="s-thin"/>
+          <path d="M450 130 v19 M368 186 l14 20 M532 186 l-14 20 M304 230 l12 18 M596 230 l-12 18" class="s-thin"/>
+          <path d="M214 292 L230 280 M686 292 L670 280" class="s-main"/>
+          <rect x="540" y="160" width="26" height="58" class="s-main"/>
+          <line x1="534" y1="160" x2="572" y2="160" class="s-main"/>
+        </g>
+        <!-- dimensions + callouts -->
+        <g class="ply" data-ply="5">
+          <path d="M250 530 h400" class="s-red"/>
+          <path d="M250 522 v16 M650 522 v16" class="s-red"/>
+          <text x="450" y="548" class="t-red" text-anchor="middle">CLEAR SPAN — VERIFIED IN FIELD</text>
+          <path d="M700 470 v-340 " class="s-red s-dash"/>
+          <path d="M692 470 h16 M692 130 h16" class="s-red"/>
+          <text x="716" y="300" class="t-red" transform="rotate(90 716 300)">RIDGE HEIGHT</text>
+          <circle cx="450" cy="130" r="16" class="s-red"/><text x="450" y="135" class="t-red" text-anchor="middle">1</text>
+          <circle cx="643" cy="344" r="16" class="s-red"/><text x="643" y="349" class="t-red" text-anchor="middle">2</text>
+          <circle cx="265" cy="500" r="16" class="s-red"/><text x="265" y="505" class="t-red" text-anchor="middle">3</text>
+        </g>
+      </svg>
+      <ol class="dwg__legend mono">
+        <li class="reveal"><span class="lg-no">1</span> RIDGE &amp; ROOF SYSTEM — engineered trusses, ice-shield underlayment for PA winters</li>
+        <li class="reveal"><span class="lg-no">2</span> WALL ASSEMBLY — 2×6 framing, continuous insulation, code-plus air sealing</li>
+        <li class="reveal"><span class="lg-no">3</span> FOUNDATION — poured concrete on undisturbed bearing, damp-proofed &amp; drained</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROJECTS / DRAFTING TABLE ═══ -->
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow mono">RECORD SET — SELECTED WORK</p>
+      <h2>Projects that <em>hold their line.</em></h2>
+    </div>
+    <div class="proj__grid">
+      <figure class="proj proj--wide reveal">
+        <div class="proj__imgwrap">
+          <img src="/redesign/assets/img/fin-office.jpg" alt="Medical office building, West Chester PA" loading="lazy">
+          <span class="proj__stamp mono" aria-hidden="true">APPROVED</span>
+        </div>
+        <figcaption class="mono">
+          <span class="proj__no">PRJ-231</span>
+          <span class="proj__name">WEST CHESTER MEDICAL OFFICES</span>
+          <span class="proj__meta">WEST CHESTER, PA · COMMERCIAL · 24,000 SF · $8.2M</span>
+        </figcaption>
+      </figure>
+      <figure class="proj reveal">
+        <div class="proj__imgwrap">
+          <img src="/redesign/assets/img/region-stone-house.jpg" alt="Custom fieldstone residence, Doylestown PA" loading="lazy">
+          <span class="proj__stamp mono" aria-hidden="true">APPROVED</span>
+        </div>
+        <figcaption class="mono">
+          <span class="proj__no">PRJ-198</span>
+          <span class="proj__name">CUSTOM FIELDSTONE RESIDENCE</span>
+          <span class="proj__meta">DOYLESTOWN, PA · RESIDENTIAL · 6,800 SF</span>
+        </figcaption>
+      </figure>
+      <figure class="proj reveal">
+        <div class="proj__imgwrap">
+          <img src="/redesign/assets/img/build-steel.jpg" alt="Distribution facility, Exton PA" loading="lazy">
+          <span class="proj__stamp mono" aria-hidden="true">APPROVED</span>
+        </div>
+        <figcaption class="mono">
+          <span class="proj__no">PRJ-172</span>
+          <span class="proj__name">DISTRIBUTION FACILITY</span>
+          <span class="proj__meta">EXTON, PA · INDUSTRIAL · 60,000 SF</span>
+        </figcaption>
+      </figure>
+      <figure class="proj reveal">
+        <div class="proj__imgwrap">
+          <img src="/redesign/assets/img/region-main-street.jpg" alt="Main Street retail renovation, Media PA" loading="lazy">
+          <span class="proj__stamp mono" aria-hidden="true">APPROVED</span>
+        </div>
+        <figcaption class="mono">
+          <span class="proj__no">PRJ-164</span>
+          <span class="proj__name">MAIN STREET RETAIL RENOVATION</span>
+          <span class="proj__meta">MEDIA, PA · RENOVATION · FULL GUT</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROCESS ═══ -->
+<section class="process" id="process">
+  <div class="container">
+    <div class="sec-head sec-head--onblue reveal">
+      <p class="eyebrow mono">SEQUENCE OF OPERATIONS</p>
+      <h2>A clear process. <em>Zero surprises.</em></h2>
+    </div>
+    <div class="proc__rail" aria-hidden="true"><div class="proc__railfill" id="railFill"></div></div>
+    <ol class="proc__list">
+      <li class="proc__step reveal"><span class="proc__marker mono">01</span><h3>Consultation</h3><p>We meet on-site to understand your goals, budget, and timeline. No commitment — just a conversation.</p></li>
+      <li class="proc__step reveal"><span class="proc__marker mono">02</span><h3>Planning &amp; Design</h3><p>A detailed project plan with line-item estimates, material selections, permits, and a firm schedule.</p></li>
+      <li class="proc__step reveal"><span class="proc__marker mono">03</span><h3>Construction</h3><p>Our crews execute with precision — weekly progress reports and a project manager who always picks up.</p></li>
+      <li class="proc__step reveal"><span class="proc__marker mono">04</span><h3>Handoff</h3><p>Final walkthrough, punch list, warranty documentation, and a one-year follow-up service visit.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ═══ WHY / INSPECTION CHECKLIST ═══ -->
+<section class="why" id="why">
+  <div class="container why__grid">
+    <div class="why__left reveal">
+      <p class="eyebrow mono">INSPECTION RECORD — WHY CAPUTO</p>
+      <h2>A name you can trust<br><em>on every job.</em></h2>
+      <p class="why__copy">Family-owned since 1977. For forty-nine years, southeastern Pennsylvania homeowners, developers, and businesses have trusted Caputo to build it right the first time.</p>
+      <a href="#spec" class="btn btn--red">Start a Conversation</a>
+    </div>
+    <ul class="why__list">
+      <li class="why__item reveal"><svg viewBox="0 0 24 24" class="ck draw"><path d="M4 13 l5 5 L20 6" fill="none" stroke-linecap="round"/></svg><div><h4>Regionally rooted</h4><p>We work where you live — southeastern Pennsylvania codes, climate, and inspectors, known cold.</p></div></li>
+      <li class="why__item reveal"><svg viewBox="0 0 24 24" class="ck draw"><path d="M4 13 l5 5 L20 6" fill="none" stroke-linecap="round"/></svg><div><h4>Transparent pricing</h4><p>Line-item estimates. No hidden fees, no surprises — the number we quote is the number we mean.</p></div></li>
+      <li class="why__item reveal"><svg viewBox="0 0 24 24" class="ck draw"><path d="M4 13 l5 5 L20 6" fill="none" stroke-linecap="round"/></svg><div><h4>On time, on budget</h4><p>A 49-year track record of schedules kept and budgets held.</p></div></li>
+      <li class="why__item reveal"><svg viewBox="0 0 24 24" class="ck draw"><path d="M4 13 l5 5 L20 6" fill="none" stroke-linecap="round"/></svg><div><h4>Licensed &amp; fully insured</h4><p>PA general contractor license, full general liability, and workers' comp on every project.</p></div></li>
+      <li class="why__item reveal"><svg viewBox="0 0 24 24" class="ck draw"><path d="M4 13 l5 5 L20 6" fill="none" stroke-linecap="round"/></svg><div><h4>Single point of contact</h4><p>One dedicated project manager from groundbreaking to handoff. No runaround.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══ FILM STRIP ═══ -->
+<section class="strip" aria-label="Project photo strip">
+  <div class="strip__track">
+    <figure><img src="/redesign/assets/img/build-framing.jpg" alt="Framing in progress" loading="lazy"><figcaption class="mono">FRAMING</figcaption></figure>
+    <figure><img src="/redesign/assets/img/build-masonry.jpg" alt="Masonry work" loading="lazy"><figcaption class="mono">MASONRY</figcaption></figure>
+    <figure><img src="/redesign/assets/img/build-concrete.jpg" alt="Concrete pour" loading="lazy"><figcaption class="mono">CONCRETE</figcaption></figure>
+    <figure><img src="/redesign/assets/img/fin-kitchen.jpg" alt="Finished kitchen" loading="lazy"><figcaption class="mono">FINISH</figcaption></figure>
+    <figure><img src="/redesign/assets/img/build-roofing.jpg" alt="Roofing work" loading="lazy"><figcaption class="mono">ROOFING</figcaption></figure>
+    <figure><img src="/redesign/assets/img/region-bridge.jpg" alt="Covered bridge in autumn, Pennsylvania" loading="lazy"><figcaption class="mono">PENNSYLVANIA</figcaption></figure>
+  </div>
+</section>
+
+<!-- ═══ SPEC SHEET FORM ═══ -->
+<section class="spec" id="spec">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="eyebrow mono">FORM 77 — PROJECT SPEC SHEET</p>
+      <h2>Tell us what <em>you're building.</em></h2>
+      <p class="sec-sub">Fill in the sheet. We review every submission personally and call you back within one business day.</p>
+    </div>
+    <form class="sheet reveal" id="specForm" novalidate>
+      <div class="sheet__row sheet__row--2">
+        <label class="cell">
+          <span class="cell__tag mono">01 — NAME</span>
+          <input type="text" name="name" autocomplete="name" required minlength="2" placeholder="Your full name">
+          <span class="cell__err mono" aria-live="polite"></span>
+        </label>
+        <label class="cell">
+          <span class="cell__tag mono">02 — PHONE</span>
+          <input type="tel" name="phone" autocomplete="tel" required pattern="[\d\s\-\(\)\.]{10,}" placeholder="Best number to reach you">
+          <span class="cell__err mono" aria-live="polite"></span>
+        </label>
+      </div>
+      <div class="sheet__row">
+        <label class="cell">
+          <span class="cell__tag mono">03 — PROJECT LOCATION</span>
+          <input type="text" name="location" placeholder="Township / borough / county" required minlength="2">
+          <span class="cell__err mono" aria-live="polite"></span>
+        </label>
+      </div>
+      <fieldset class="cell cell--fieldset">
+        <legend class="cell__tag mono">04 — PROJECT TYPE (STAMP ALL THAT APPLY)</legend>
+        <div class="chips" role="group">
+          <label class="chip"><input type="checkbox" name="type" value="commercial"><span>COMMERCIAL</span></label>
+          <label class="chip"><input type="checkbox" name="type" value="residential"><span>RESIDENTIAL</span></label>
+          <label class="chip"><input type="checkbox" name="type" value="renovation"><span>RENOVATION</span></label>
+          <label class="chip"><input type="checkbox" name="type" value="site"><span>SITE WORK</span></label>
+          <label class="chip"><input type="checkbox" name="type" value="other"><span>OTHER</span></label>
+        </div>
+        <span class="cell__err mono" id="typeErr" aria-live="polite"></span>
+      </fieldset>
+      <div class="cell cell--range">
+        <label class="cell__tag mono" for="budget">05 — WORKING BUDGET&nbsp; <output id="budgetOut" for="budget">$250K</output></label>
+        <input type="range" id="budget" name="budget" min="0" max="9" step="1" value="2" list="budgetTicks">
+        <div class="range__scale mono" aria-hidden="true">
+          <span>$50K</span><span>$100K</span><span>$250K</span><span>$500K</span><span>$750K</span><span>$1M</span><span>$2M</span><span>$5M</span><span>$10M</span><span>$10M+</span>
+        </div>
+      </div>
+      <div class="sheet__row">
+        <label class="cell">
+          <span class="cell__tag mono">06 — PROJECT NOTES</span>
+          <textarea name="notes" rows="4" placeholder="Scope, timeline, anything we should know…"></textarea>
+        </label>
+      </div>
+      <input type="text" name="company_website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="sheet__foot">
+        <p class="mono sheet__foot-note">REVIEWED BY: R. CAPUTO &nbsp;·&nbsp; RESPONSE: ≤ 1 BUSINESS DAY &nbsp;·&nbsp; OR CALL <a href="tel:+16077687501">607-768-7501</a></p>
+        <button type="submit" class="btn btn--red btn--submit" id="specSubmit">Submit for Review</button>
+      </div>
+      <div class="stamp" id="stamp" aria-hidden="true"><div class="stamp__inner mono">RECEIVED<span>FOR REVIEW — EST. 1977</span></div></div>
+    </form>
+    <p class="spec__done mono" id="specDone" hidden>Sheet received. We'll call you within one business day. — CAPUTO CONSTRUCTION</p>
+  </div>
+</section>
+
+<!-- ═══ FOOTER TITLE BLOCK ═══ -->
+<footer class="foot">
+  <div class="container foot__block mono">
+    <div class="foot__cell foot__cell--brand">
+      <img src="/caputo-logo-white.png" alt="Caputo Construction" height="26">
+      <span>BUILT TO LAST. BUILT FOR YOU.</span>
+    </div>
+    <div class="foot__cell"><span class="foot__k">SERVICE AREA</span><span>SOUTHEASTERN PENNSYLVANIA</span></div>
+    <div class="foot__cell"><span class="foot__k">PHONE</span><a href="tel:+16077687501">607-768-7501</a></div>
+    <div class="foot__cell"><span class="foot__k">HOURS</span><span>MON–FRI 7AM–6PM</span></div>
+    <div class="foot__cell"><span class="foot__k">SHEET</span><span>1 OF 1 · REV A · EST. 1977</span></div>
+  </div>
+  <p class="foot__bottom mono">© 2026 CAPUTO CONSTRUCTION COMPANY · SERVING SOUTHEASTERN PENNSYLVANIA</p>
+</footer>
+
+<script src="blueprint.js"></script>
+</body>
+</html>
