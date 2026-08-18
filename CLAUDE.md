@@ -38,17 +38,16 @@ Public alias: https://construction-site-sandy.vercel.app
 | `assets/` | Images, logos, etc. |
 
 ## Current Status
-**Phase**: Content trim + placeholder replacement
-**Progress**: Live at caputoconstructioncompany.com (domain wired, HTTP 200). 2026-06-09 — removed the lower marketing sections (Team, Testimonials, Certifications, Service Area) per Ali; kept Contact CTA banner (`#contact`) and footer. Page now flows Hero → Stats → Services → Process → Projects → Breakdown → Why → Gallery → CTA → Footer. (Note: orphaned CSS for `.team`/`.certs`/`.service-area`/`.testimonials` still in `style.css` — harmless unused rules, can be stripped.)
+**Phase**: Awaiting redesign pick
+**Progress**: Live at caputoconstructioncompany.com (domain wired, HTTP 200). 2026-08-14 — ALL contact info stripped from live site per Ali (Contact CTA banner, phone, email, address, Get In Touch column, all #contact CTAs); founding year set to Est. 1972 (live + all redesign/ versions). Page now flows Hero → Stats → Services → Process → Projects → Breakdown → Why → Gallery → Footer. (Note: orphaned CSS for removed sections + contact styles still in `style.css` — harmless unused rules, can be stripped.)
 
 ## Known Risks
-- **Placeholder content still in place**: phone number ((570) 555-0100), street address (123 Main Street)
-- **Zoho contact form**: not wired — CTA currently uses a `mailto:` link, not a form
+- **No contact info policy (2026-08-14, per Ali)**: ALL contact info removed from the site — no phone, email, address, or contact CTAs. Founding year is **Est. 1972** (supersedes earlier 1998/1977 values). Do not re-add contact info without Ali.
 
 ## Next 3 Tasks
-1. Replace placeholder phone number, street address, and hours with real values
-2. Wire Zoho contact form API integration (get credentials from wife's Zoho account)
-3. (Optional) Strip dead CSS for the removed sections from `style.css`
+1. Ali picks a redesign direction at `localhost:4174/redesign/` → promote winner (contact blocks already stripped, Est. 1972 applied) → deploy
+2. Replace stock imagery with real Caputo job photos
+3. (Optional) Strip dead CSS (removed sections + contact styles) from `style.css`
 
 ## Obsidian Reference
 `Caputo-Construction.md` in vault

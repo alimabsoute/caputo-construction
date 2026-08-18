@@ -87,14 +87,14 @@
       });
     });
 
-    /* pinned era: 1977 → 2026 */
+    /* pinned era: 1972 → 2026 */
     const yearEl = document.getElementById('eraYear');
     const caps = [...document.querySelectorAll('.era__cap-line')];
-    const marks = [1977, 1994, 2011, 2026];
+    const marks = [1972, 1994, 2011, 2026];
     ScrollTrigger.create({
       trigger: '.era', start: 'top top', end: '+=220%', pin: '.era__pin', scrub: 0.4,
       onUpdate(self) {
-        const year = Math.round(1977 + (2026 - 1977) * self.progress);
+        const year = Math.round(1972 + (2026 - 1972) * self.progress);
         yearEl.textContent = year;
         let idx = 0;
         marks.forEach((m, i) => { if (year >= m) idx = i; });
@@ -122,7 +122,7 @@
     /* no GSAP (offline CDN) or reduced motion: static final state */
     document.querySelectorAll('.split .word').forEach((w) => { w.style.opacity = 1; });
     document.querySelector('.era__cap-line')?.classList.add('on');
-    document.getElementById('eraYear').textContent = '1977';
+    document.getElementById('eraYear').textContent = '1972';
   }
 
   /* ── wizard ── */

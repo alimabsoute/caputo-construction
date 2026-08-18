@@ -484,7 +484,7 @@ cd construction-site && vercel --prod --yes
 ## Content Placeholders (to fill with real info)
 
 - [ ] Year founded — placeholder: `Est. 1998`
-- [ ] Exact phone number — placeholder: `(570) 555-0100`
+- [x] ~~Exact phone number~~ — dropped 2026-08-14: site carries NO contact info per Ali
 - [x] Email address — info@caputoconstructioncompany.com
 - [ ] Office/mailing address — placeholder: `123 Main Street, Hazleton, PA 18201`
 - [x] Project photos — using Unsplash (construction/architecture, free to use):

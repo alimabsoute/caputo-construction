@@ -81,7 +81,7 @@ Design each section in sequence. Show the full desktop layout (1440px wide). Als
 ### NAV (Sticky, transparent over hero → solid `#0F0F0F` on scroll)
 - Left: White logo (linked above)
 - Center: `Services  |  Projects  |  About  |  Contact` — Inter 500, 14px, white
-- Right: Phone number placeholder `(570) 555-0100` in red + `[Get a Quote]` red filled pill button
+- Right: (historical spec — phone + Get a Quote since removed; site now carries no contact info)
 - On scroll: background becomes `#0F0F0F`, soft shadow below
 
 ---
@@ -200,7 +200,7 @@ Design each section in sequence. Show the full desktop layout (1440px wide). Als
   - H2 white: `"Ready to Build Something Great?"`
   - Subtext white 70%: `"Tell us about your project. We'll get back to you within 24 hours."`
   - `[Start Your Project]` — white button, red text, large (56px tall, 48px horizontal padding)
-  - Below button: `or call us at (570) 555-0100` — white, small
+  - (historical spec — phone line removed; no contact info on site)
 - Annotate: "Subtle concrete texture overlay at 4% opacity on red background"
 
 ---
